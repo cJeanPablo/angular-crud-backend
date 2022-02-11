@@ -1,1 +1,15 @@
-{}
+{
+    "products": [{
+        "id": 1,
+        "name": "PS4",
+        "price": 3000.99
+    },{
+        "id": 2,
+        "name": "TV",
+        "price": 4500.99
+    },{
+        "id": 3,
+        "name": "Sofa",
+        "price": 1200.99
+    }]
+}
