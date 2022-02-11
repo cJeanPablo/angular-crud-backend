@@ -1,0 +1,23 @@
+[33mcommit e6f7e91aee32bcb3d461234869467054f783342d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: cJeanPablo <cjeanpablo@gmail.com>
+Date:   Fri Feb 11 13:15:47 2022 -0300
+
+    added angular-material
+
+[33mcommit 1f0001e38063fb0c310793e867459ad3268cf9da[m
+Author: cJeanPablo <cjeanpablo@gmail.com>
+Date:   Fri Feb 11 12:40:02 2022 -0300
+
+    added frontend
+
+[33mcommit 68ae62b3e9ff8a5b94c1bf1e46af9ce40cf73c0b[m
+Author: cJeanPablo <cjeanpablo@gmail.com>
+Date:   Fri Feb 11 12:25:55 2022 -0300
+
+    added backend
+
+[33mcommit 422cf5bcd23600074a35b66dbcaef824fc87b0b5[m
+Author: cJeanPablo <cjeanpablo@gmail.com>
+Date:   Fri Feb 11 12:15:23 2022 -0300
+
+    added gitignore
