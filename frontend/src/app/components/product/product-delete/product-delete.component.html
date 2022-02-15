@@ -1,15 +1,21 @@
 <mat-card>
-    <mat-card-title>Tem certeza de que quer deletar esse produto?</mat-card-title>
+    <mat-card-title class="title">Tem certeza?</mat-card-title>
     <form>
-      <mat-form-field>
-      </mat-form-field>
-      <mat-form-field>
-      </mat-form-field>
+        <p matInput placeholder="Nome"
+        [(ngModel)]="product.name" name="name" class="name">Produto: {{product.name}}</p>
+
+        <p matInput placeholder="Preço (R$)"
+        [(ngModel)]="product.price" name="price" class="price">{{product.price | currency: 'BRL'}}</p>
     </form>
-    <button mat-raised-button (click)="delete()" color="primary">
+    <button mat-raised-button class="delete" (click)="delete()" color="warn">
       Excluir
     </button>
-    <button mat-raised-button (click)="cancel()" color="secondary">
+    <button mat-raised-button class="cancel" (click)="cancel()" color="secondary">
       Cancelar
     </button>
+
+    <p class="warning">
+      <strong>AVISO: </strong>
+      Uma vez deletado, o produto não pode ser recuperado!
+    </p>
   </mat-card>

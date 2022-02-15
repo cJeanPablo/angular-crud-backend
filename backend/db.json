@@ -1,34 +1,3 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "PS2",
-      "price": "3000"
-    },
-    {
-      "id": 2,
-      "name": "TV",
-      "price": 4500.99
-    },
-    {
-      "id": 3,
-      "name": "Sofa 3 lugares",
-      "price": 1200.99
-    },
-    {
-      "name": "Coco",
-      "price": "9999",
-      "id": 4
-    },
-    {
-      "name": "",
-      "price": 0,
-      "id": 5
-    },
-    {
-      "name": "",
-      "price": 0,
-      "id": 6
-    }
-  ]
+  "products": []
 }

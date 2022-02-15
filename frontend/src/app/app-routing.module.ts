@@ -20,7 +20,7 @@ const routes: Routes = [
     component: ProductCreateComponent,
   },
   {
-    path: "products/delete",
+    path: "products/delete/:id",
     component: ProductDeleteComponent
   },
   {

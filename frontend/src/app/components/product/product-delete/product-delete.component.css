@@ -1,3 +1,27 @@
+.title {
+    margin-bottom: 15px
+}
+
+form {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 button {
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+button.cancel {
     margin-left: 15px;
+}
+
+p.warning {
+    font-size: 1.3rem;
+    color: red;
+}
+
+p.warning strong {
+    color: black
 }

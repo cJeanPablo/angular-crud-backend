@@ -1,5 +1,5 @@
 import { Product } from "./../product.model";
-import { Router } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 import { ProductService } from "./../product.service";
 import { Component, OnInit } from "@angular/core";
 
@@ -9,21 +9,29 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./product-delete.component.css"],
 })
 export class ProductDeleteComponent implements OnInit {
-  products: Product = {
-    name: "PS4",
-    price: 3000.99,
+  
+  product: Product = {
+    name: "",
+    price: undefined,
   };
 
-  constructor(private productService: ProductService, private router: Router) {}
+  constructor(private productService: ProductService,
+    private router: Router,
+    private route: ActivatedRoute) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const id = this.route.snapshot.paramMap.get("id");
+    this.productService.readById(id).subscribe((product) => {
+      this.product = product; 
+  })
+}
 
   cancel(): void {
     this.router.navigate(["/products"]);
   }
 
   delete(): void {
-    this.productService.delete(this.products).subscribe(() => {
+    this.productService.delete(this.product).subscribe(() => {
       this.productService.showMessage("Produto deletado!"),
         this.router.navigate(["/products"]);
     });
