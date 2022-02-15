@@ -24,7 +24,7 @@
     <ng-container matColumnDef="actions">
       <th mat-header-cell *matHeaderCellDef>Actions</th>
       <td mat-cell *matCellDef="let product of products">
-        <a routerLink="edit">
+        <a routerLink="/products/edit/{{ product.id }}">
           <i class="material-icons edit" color="primary">edit</i>
         </a>
         <a routerLink="delete">

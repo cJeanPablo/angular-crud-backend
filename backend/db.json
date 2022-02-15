@@ -2,8 +2,8 @@
   "products": [
     {
       "id": 1,
-      "name": "PS4",
-      "price": 3000.99
+      "name": "PS2",
+      "price": "3000"
     },
     {
       "id": 2,
@@ -12,7 +12,7 @@
     },
     {
       "id": 3,
-      "name": "Sofa",
+      "name": "Sofa 3 lugares",
       "price": 1200.99
     },
     {
