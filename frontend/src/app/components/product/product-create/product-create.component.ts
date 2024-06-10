@@ -12,7 +12,7 @@ import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 export class ProductCreateComponent implements OnInit {
 
   days: number[] = [];
-
+  horas: number[] = [];
   product: Product = {
     mes: "",
     projeto: "",
@@ -41,6 +41,9 @@ export class ProductCreateComponent implements OnInit {
     }
       for (let i = 1; i <= quantidadeDias; i++) {
         this.days.push(i);
+      }
+      for (let i = 1; i  <= 8; i++){
+        this.horas.push(i);
       }
   }
 
