@@ -2,10 +2,10 @@
     <mat-card-title class="title">Tem certeza?</mat-card-title>
     <form>
         <p matInput placeholder="mes"
-        [(ngModel)]="product.mes" name="mes" class="mes">Produto: {{product.mes}}</p>
+        [(ngModel)]="product.atividade" name="mes" class="mes">Projeto: {{product.projeto}}</p>
 
         <p matInput placeholder="projeto"
-        [(ngModel)]="product.projeto" name="projeto" class="projeto">{{product.projeto}}</p>
+        [(ngModel)]="product.atividade" name="projeto" class="projeto">Atividade: {{product.atividade}}</p>
     </form>
     <button mat-raised-button class="delete" (click)="delete()" color="warn">
       Excluir
