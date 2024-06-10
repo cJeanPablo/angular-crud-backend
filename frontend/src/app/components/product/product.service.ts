@@ -12,7 +12,7 @@ export class ProductService {
   private products: Product[] = [];
   private filterSubject: BehaviorSubject<string> = new BehaviorSubject<string>('');
 
-  baseUrl = "http://localhost:3001/products"
+  baseUrl = "https://json-server-1osb.onrender.com/products"
 
   constructor(private snackBar: MatSnackBar,
     private http: HttpClient) { }
