@@ -11,8 +11,12 @@ import { Component, OnInit } from "@angular/core";
 export class ProductDeleteComponent implements OnInit {
   
   product: Product = {
-    name: "",
-    price: undefined,
+    mes: "",
+    projeto: "",
+    atividade: "",
+    atividadeDetalhe: "",
+    horas: "",
+    dia: 0
   };
 
   constructor(private productService: ProductService,

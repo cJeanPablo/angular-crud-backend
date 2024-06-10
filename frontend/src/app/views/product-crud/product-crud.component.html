@@ -1,6 +1,15 @@
-<button mat-raised-button (click)="navigateToProductCreate()"
- color="primary">
+<button mat-raised-button (click)="navigateToProductCreate($event)" color="primary">
   Novo produto
 </button>
+
+<mat-form-field>
+  <mat-label>Selecione um mês</mat-label>
+  <mat-select (selectionChange)="onSelectionChange($event)">
+    <mat-option *ngFor="let option of options" [value]="option.value">
+      {{ option.viewValue }}
+    </mat-option>
+  </mat-select>
+
+</mat-form-field>
 
 <app-product-read></app-product-read>

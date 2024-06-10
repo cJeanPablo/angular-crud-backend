@@ -16,7 +16,7 @@ const routes: Routes = [
     component: ProductCrudComponent,
   },
   {
-    path: "products/create",
+    path: "products/create/:mes",
     component: ProductCreateComponent,
   },
   {

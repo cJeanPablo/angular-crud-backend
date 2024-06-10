@@ -21,6 +21,9 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { HttpClientModule } from "@angular/common/http";
 
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 import { FormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
@@ -32,6 +35,8 @@ import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from "@angular/common";
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 import { ProductEditComponent } from './components/product/product-edit/product-edit.component';
+
+import { MatSelectModule } from "@angular/material/select";
 
 registerLocaleData(localePt)
 
@@ -65,6 +70,9 @@ registerLocaleData(localePt)
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [{
     provide: LOCALE_ID,

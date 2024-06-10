@@ -3,6 +3,7 @@ import { ProductService } from "./../product.service";
 import { Product } from "./../product.model";
 
 import { Component, OnInit } from "@angular/core";
+import { Observable } from 'rxjs';
 
 @Component({
   selector: "app-product-read",
@@ -11,13 +12,21 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ProductReadComponent implements OnInit {
   products: Product[] = [];
-  displayedColumns = ["id", "name", "price", "actions"];
+  displayedColumns = ["id", "mes", "projeto", "dia", "atividade", "atividadeDetalhe", "actions"];
+  products$!: Observable<Product[]>;
 
   constructor(private productService: ProductService,
     private router: Router) {}
 
   ngOnInit(): void {
-    this.productService.read().subscribe((products) => {
+    this.productService.getFilterProducts().subscribe((products) => {
+      this.products = products;
+      console.log(products);
+    });
+  }
+
+  readByMonth(month : string) : void {
+    this.productService.readByMonth(month).subscribe((products) => {
       this.products = products;
       console.log(products);
     });

@@ -2,12 +2,16 @@
     <mat-card-title>Editar Produto</mat-card-title>
     <form>
       <mat-form-field>
-        <input matInput placeholder="Nome"
-        [(ngModel)]="product.name" name="name">
+        <input matInput placeholder="Projeto"
+        [(ngModel)]="product.projeto" readonly name="mes">
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Preço (R$)"
-        [(ngModel)]="product.price" name="price">
+        <input matInput placeholder="Atividade"
+        [(ngModel)]="product.atividade" name="projeto">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Detalhe da atividade"
+        [(ngModel)]="product.atividadeDetalhe" name="projeto">
       </mat-form-field>
     </form>
     <button mat-raised-button (click)="editProduct()" color="primary">

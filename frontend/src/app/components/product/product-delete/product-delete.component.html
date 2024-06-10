@@ -1,11 +1,11 @@
 <mat-card>
     <mat-card-title class="title">Tem certeza?</mat-card-title>
     <form>
-        <p matInput placeholder="Nome"
-        [(ngModel)]="product.name" name="name" class="name">Produto: {{product.name}}</p>
+        <p matInput placeholder="mes"
+        [(ngModel)]="product.mes" name="mes" class="mes">Produto: {{product.mes}}</p>
 
-        <p matInput placeholder="Preço (R$)"
-        [(ngModel)]="product.price" name="price" class="price">{{product.price | currency: 'BRL'}}</p>
+        <p matInput placeholder="projeto"
+        [(ngModel)]="product.projeto" name="projeto" class="projeto">{{product.projeto}}</p>
     </form>
     <button mat-raised-button class="delete" (click)="delete()" color="warn">
       Excluir

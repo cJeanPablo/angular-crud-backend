@@ -10,8 +10,12 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ProductEditComponent implements OnInit {
   product: Product = {
-    name: "",
-    price: undefined,
+    mes: "",
+    projeto: "",
+    dia: 0,
+    atividade: "",
+    atividadeDetalhe: "",
+    horas: ""
   };
 
   constructor(

@@ -2,18 +2,35 @@
   <mat-card-title>Novo produto</mat-card-title>
   <form>
     <mat-form-field>
-      <input matInput placeholder="Nome"
-       [(ngModel)]="product.name" name="name">
+      <input matInput placeholder="Mes" disabled [(ngModel)]="product.mes" name="name">
     </mat-form-field>
     <mat-form-field>
-      <input matInput placeholder="Preço (R$)"
-      [(ngModel)]="product.price" name="price">
+      <mat-label>Projeto</mat-label>
+      <mat-select [(ngModel)]="product.projeto" name="price" [(value)]="product.projeto">
+        <mat-option>None</mat-option>
+        <mat-option value="Refatoração do projeto XXX">Refatoração do projeto XXX</mat-option>
+        <mat-option value="Refatoração do projeto YYY">Refatoração do projeto YYY</mat-option>
+        <mat-option value="Refatoração do projeto ZZZ">Refatoração do projeto ZZZ</mat-option>
+      </mat-select>
     </mat-form-field>
+    <mat-form-field>
+      <mat-label>Selecione o Dia</mat-label>
+      <mat-select [(ngModel)]="product.dia" name="price" [(value)]="product.dia">
+        <mat-option *ngFor="let day of days" [value]="day">{{ day }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Atividade" [(ngModel)]="product.atividade" name="atividade">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Detalhe da Atividade" [(ngModel)]="product.atividadeDetalhe" name="atividadeDetalhe">
+    </mat-form-field>
+
   </form>
   <button mat-raised-button (click)="createProduct()" color="primary">
     Salvar
   </button>
-  
+
   <button mat-raised-button (click)="cancel()" color="secondary">
     Cancelar
   </button>
