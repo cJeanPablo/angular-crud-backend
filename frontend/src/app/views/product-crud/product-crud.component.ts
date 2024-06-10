@@ -31,7 +31,7 @@ export class ProductCrudComponent implements OnInit {
     private headerService : HeaderService,
     private productService: ProductService) {
     headerService.headerData = {
-      title: 'Cadastro de Atividades',
+      title: 'Lançamento de Horas',
       icon: 'list_alt',
       routeUrl: '/products'
     }
