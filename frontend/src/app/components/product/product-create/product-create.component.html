@@ -20,6 +20,12 @@
       </mat-select>
     </mat-form-field>
     <mat-form-field>
+      <mat-label>Quantidade de horas</mat-label>
+      <mat-select [(ngModel)]="product.horas" name="price" [(value)]="product.horas">
+        <mat-option *ngFor="let hora of horas" [value]="hora">{{ hora }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
       <input matInput placeholder="Atividade" [(ngModel)]="product.atividade" name="atividade">
     </mat-form-field>
     <mat-form-field>
