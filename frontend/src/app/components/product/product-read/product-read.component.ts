@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 })
 export class ProductReadComponent implements OnInit {
   products: Product[] = [];
-  displayedColumns = ["id", "mes", "projeto", "dia", "atividade", "atividadeDetalhe", "actions"];
+  displayedColumns = ["id", "mes", "projeto", "dia", "atividade", "atividadeDetalhe","horas", "actions"];
   products$!: Observable<Product[]>;
 
   constructor(private productService: ProductService,
